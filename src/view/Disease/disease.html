@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src="{{ url_for('static', filename='Disease/disease.js') }}"></script>
+    <title>{{ title }}</title>
+  </head>
+  <body>
+    <h1 id="title">Cadastro de doênça</h1>
+    <label for="diseaseName">Insira o nome da Doênça:</label>
+    <div class="forms">
+      <textarea 
+      id="form-input-name"
+      cols="50"
+      ></textarea>
+    </div>
+    <label for="diseaseDescription">Sintomas da Doênça:</label> 
+    <div class="forms">
+      <textarea 
+        id="form-input-description"
+        name="doenca-description"
+        rows="6"
+        cols="50"
+        onblur="onFocusLoose(this)"
+      ></textarea>
+    </div>
+    <div class="forms">
+      <input
+        id="form-btn"
+        value="Cadastrar"
+        type="button"
+        name="logar"
+        id="logar"
+        onclick="registerDisease()"
+      >    
+    </div>
+  </body>
+</html>
