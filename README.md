@@ -1,4 +1,4 @@
-# Vídeo:
+# Vídeo: https://youtu.be/IZUKYHWK34E
 
 Gabriel Augusto Landim - 1460481821029 	
 
@@ -54,7 +54,7 @@ Utilize nos campos "MARIA_USERNAME" e "MARIA_PASSWORD" seu usuario e senha de ad
 ```
 python wsgi.py init_db
 ```
-* Após a primeira utilize o comando a seguir para iniciar a aplicação Flask:
+* Após a primeira incicialização utilize o comando a seguir para iniciar a aplicação Flask:
 ```
 python wsgi.py
 ```
