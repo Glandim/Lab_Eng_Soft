@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="{{ url_for('static', filename='Incidence/incidence.js') }}"></script>
+    <title>{{ title }}</title>
+  </head>
+  <body>
+    <h1 class="title">Cadastre uma incidência</h1>
+    <label for="disease-name">Doênça:</label>
+    <div class="forms">
+      <select class="select-disease" name="disease" id="disease">
+        <option value="" disabled selected>Selecione a doênça</option>
+        {% if data.diseases %}
+          {% for disease in data.diseases %}
+            <option value="{{ disease }}">{{ disease }}</option>
+          {% endfor %}
+        {% endif %}
+      </select>
+    </div>
+    <div class="incidence-form">
+      <div class='form-div-input'>
+        <label for="incidenceDate">Data do registro:</label>
+        <div class="forms">
+          <input
+            class="form-input"
+            type="date"
+            name="incidenceDate"
+            id="incidenceDate"
+            onblur="onFocusLoose(this)"
+          >    
+        </div>
+      </div>
+    </div>
+    <div class="disease-form">
+      <div class='form-div-input'>
+        <div class="forms">
+          <input
+            class="form-btn"
+            value="Cadastrar"
+            type="button"
+            name="logar"
+            id="logar"
+            onclick="sendIncidence()"
+          >    
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
