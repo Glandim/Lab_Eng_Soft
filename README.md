@@ -2,7 +2,7 @@
 
 Gabriel Augusto Landim - 1460481821029 	
 
-# Requisitos para executar o porjeto:
+# Requisitos para executar o projeto:
 
 * Python 3.6 ou superior - [Download](https://www.python.org/downloads/release/python-386/)
 * MariaDB - [Download](https://mariadb.com/downloads/)
@@ -31,7 +31,7 @@ cd env\Scripts
 activate
 ```
 
-* Volte a raiz do projeto e  Instale as dependências:
+* Volte a raiz do projeto e instale as dependências:
 
 ```
 cd ..\..
@@ -39,8 +39,8 @@ cd ..\..
 pip install -r requirements.txt
 ```
 
-* Crie o arquivo ```.env```
-A um exemplo desse arquivo na raiz da pasta chamado ```.env-exemplo```, esse arquivo é essencial para conexão do projeto ao seu banco de dados, siga o exemplo abaixo:
+* Crie o arquivo ```.env```:
+A um exemplo desse arquivo na raiz da pasta chamado ```.env-exemplo```, esse arquivo é essencial para conexão do projeto ao seu banco de dados, renomeio o arquivo para ```.env``` e siga o exemplo abaixo:
 ```
 MARIA_DATABASE=diseaseBD
 MARIA_HOST=127.0.0.1
